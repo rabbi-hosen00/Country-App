@@ -1,0 +1,29 @@
+
+.countries {
+   padding: 3rem;
+    display:grid;
+    gap: 2rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .countries {
+      grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+    .countries {
+      grid-template-columns: 1fr 1fr; /* Change to a 2-column layout */
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    .countries {
+      grid-template-columns: 1fr 1fr 1fr; /* Revert to the default 3-column layout */
+    }
+  }
+
+
+
+
